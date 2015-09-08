@@ -1,0 +1,120 @@
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+// Font Variables
+$heading-font: 'Roboto Slab', serif;
+$bodycopy-font: 'Open Sans', sans-serif;
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+h1, h2 {
+	font-family: $heading-font;
+}
+
+p {
+	font-family: $bodycopy-font;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	color: #fff;
+}
+
+#wrapper {
+	width: 100%;
+	position: relative;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  background: no-repeat center center; 
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+}
+
+#header-content {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+
+#introduction-content {
+	position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  max-width: 460px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#middle-content {
+	background: #FF9800;
+	padding: 4em 0;
+}
+
+.row {
+	margin-bottom: -5px;
+	padding: 0;
+}
+
+.splash-icon {
+	font-size: 140%;
+}
+
+.content {
+	clear: both;
+	max-width: 75%;
+	margin-bottom: 0 auto;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}

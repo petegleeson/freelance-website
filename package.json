@@ -1,0 +1,26 @@
+{
+  "name": "freelance",
+  "version": "0.0.0",
+  "description": "my freelance developer site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
+  },
+  "author": "Peter Gleeson",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "node-sass": "~3.3.2",
+    "sass-loader": "~2.0.1",
+    "style-loader": "~0.12.3",
+    "css-loader": "~0.17.0",
+    "webpack": "~1.12.1",
+    "webpack-dev-server": "~1.10.1",
+    "jsx-loader": "~0.13.2",
+    "file-loader": "~0.8.4",
+    "imagemin": "~3.2.0",
+    "image-webpack-loader": "~1.6.1"
+  },
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}
