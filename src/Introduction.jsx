@@ -8,7 +8,7 @@ var Introduction = React.createClass({
     return (
 		<div style={{height: "100%"}}>
 			<div style={{height: "80%"}}>
-		    	<div className="section group">
+		    	<div className="section group" style={{padding: "1em 2em"}}>
 		    		<div className="col span_1_of_4 unresponsive">
 						<FlatIcon icon="lightbulb-1" size="150%"></FlatIcon>
 					</div>
@@ -25,9 +25,7 @@ var Introduction = React.createClass({
 	    		<div className="section group">
 	    			<div className="col span_4_of_4">
 				    	<p>
-				    	Hello!<br /><br />Welcome to my slice of the internet. I am a freelance software developer 
-				    	based in Brisbane, Australia. I have worked on a wide range of projects in both desktop 
-				    	and web environments. I love solving problems and learning new things.<br /><br />Lets work together.
+				    	Curabitur ornare suscipit pharetra. Morbi elit eros, mattis eu augue eu, aliquet pretium mauris. Duis sit amet mollis metus. Vestibulum hendrerit sapien vel sem interdum malesuada. Donec sit amet consequat enim. Aliquam tellus orci, mattis at ligula eget, cursus porta dolor. Nulla vitae bibendum turpis, at imperdiet enim.
 						</p>
 					</div>
 				</div>

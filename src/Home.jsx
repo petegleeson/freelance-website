@@ -23,12 +23,12 @@ var Home = React.createClass({
 		    		</div>
     			</div>
     		</div>
-    		<div id="middle-content" className='row'>
+    		<div id="middle-row" className='row'>
 				<div className="content">
 	    			<Qualities />
     			</div>
 			</div>
-    		<div className='row'>
+    		<div id="bottom-row" className='row'>
 				<div className="content">
 	    			<Footer />
     			</div>
