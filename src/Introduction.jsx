@@ -1,24 +1,24 @@
 require("../style/main.scss")
 require("../style/fonts/stroke.scss")
 var React = require('react')
-var SplashIcon = require('./SplashIcon');
+var FlatIcon = require('./FlatIcon');
 
 var Introduction = React.createClass({
   render: function() {
     return (
 		<div>
 	    	<div className="section group">
-				<div className="col span_1_of_4">
-					<SplashIcon icon="flaticon stroke lightbulb-1"></SplashIcon>
+	    		<div className="col span_1_of_4 unresponsive">
+					<FlatIcon icon="lightbulb-1" size="150%"></FlatIcon>
 				</div>
-				<div className="col span_1_of_4">
-					<SplashIcon icon="flaticon stroke bucket-1"></SplashIcon>
+	    		<div className="col span_1_of_4 unresponsive">
+					<FlatIcon icon="bucket-1" size="150%"></FlatIcon>
 				</div>
-				<div className="col span_1_of_4">
-					<SplashIcon icon="flaticon stroke computer-1"></SplashIcon>
+	    		<div className="col span_1_of_4 unresponsive">
+					<FlatIcon icon="computer-1" size="150%"></FlatIcon>
 				</div>
-				<div className="col span_1_of_4">
-					<SplashIcon icon="flaticon stroke chat-2"></SplashIcon>
+	    		<div className="col span_1_of_4 unresponsive">
+					<FlatIcon icon="chat-1" size="150%"></FlatIcon>
 				</div>
 	    	</div>
     		<div className="section group">
