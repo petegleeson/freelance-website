@@ -5,6 +5,7 @@ var Header = require("./Header")
 var Introduction = require("./Introduction")
 var Qualities = require("./Qualities")
 var Footer = require("./Footer")
+var FlatIcon = require("./FlatIcon")
 
 var Home = React.createClass({
   render: function() {
