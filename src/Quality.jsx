@@ -8,7 +8,7 @@ var Quality = React.createClass({
 			<div style={{paddingBottom: '1em'}}>
 				<FlatIcon icon={this.props.icon} size="150%"></FlatIcon>
 			</div>
-			<p style={{maxWidth: "250px", margin: '0em auto'}}>{this.props.children}</p>
+			<p style={{maxWidth: "250px", margin: '0em auto', textAlign: 'left'}}>{this.props.children}</p>
 		</div>
     )}
 });

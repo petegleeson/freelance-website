@@ -12,7 +12,6 @@ module.exports = {
 
   // the entry point for webpack
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
     mainPath
   ],
 
