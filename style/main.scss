@@ -35,7 +35,7 @@ body {
 
 
 #bg { 
-  background: url(../images/workspace_big.png) no-repeat center center fixed; 
+  background: url(../images/desk_all_blur_opaque.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -55,18 +55,19 @@ body {
 
 #introduction-content {
 	text-align: center;
-	max-width: 500px;
+	max-width: 550px;
 	margin: 0 auto;
 	height: 75%;
 }
 
 #middle-row {
-	background: #F57C00;
-	color: #fff;
+	background: #455A64;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #bottom-row {
-	background: #FF9800;
+	background: #607D8B;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .bold {

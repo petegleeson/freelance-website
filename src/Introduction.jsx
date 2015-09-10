@@ -24,8 +24,8 @@ var Introduction = React.createClass({
 		    	</div>
 	    		<div className="section group">
 	    			<div className="col span_4_of_4">
-				    	<p>
-				    	Hello! My name is Peter Gleeson, welcome to my slice of the internet. I am a <span className='bold'>freelance software developer</span> based in Brisbane, Australia. I have worked on a wide range of projects in both <span className='bold'>desktop and web</span> environments. I love solving problems and learning new things. Lets work together.
+				    	<p style={{padding: '0em 1em'}}>
+				    	Hello! My name is Peter Gleeson, welcome to my slice of the internet. I am a <span className='bold'>freelance software developer</span> based in Brisbane, Australia. I have worked on a wide range of projects in both <span className='bold'>desktop and web</span> environments. I love solving problems and learning new things.<br />Lets work together.
 						</p>
 					</div>
 				</div>
