@@ -25,7 +25,7 @@ var Introduction = React.createClass({
 	    		<div className="section group">
 	    			<div className="col span_4_of_4">
 				    	<p>
-				    	Curabitur ornare suscipit pharetra. Morbi elit eros, mattis eu augue eu, aliquet pretium mauris. Duis sit amet mollis metus. Vestibulum hendrerit sapien vel sem interdum malesuada. Donec sit amet consequat enim. Aliquam tellus orci, mattis at ligula eget, cursus porta dolor. Nulla vitae bibendum turpis, at imperdiet enim.
+				    	Hello! My name is Peter Gleeson, welcome to my slice of the internet. I am a <span className='bold'>freelance software developer</span> based in Brisbane, Australia. I have worked on a wide range of projects in both <span className='bold'>desktop and web</span> environments. I love solving problems and learning new things. Lets work together.
 						</p>
 					</div>
 				</div>

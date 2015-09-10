@@ -8,16 +8,16 @@ var Qualities = React.createClass({
     	<div>
 	    	<div className="section group" style={{paddingBottom: "2em"}}>
 	    		<Quality icon="lightbulb-1">
-	    			Morbi hendrerit lacinia suscipit. Nullam id mattis sapien. Ut ullamcorper pretium turpis in placerat. Cras velit erat, vestibulum eget gravida sit amet, tempor et justo.
+		    		Existing system or just an idea, no matter what stage of development you are at, I can jump in and quickly get going.
 	    		</Quality>
 	    		<Quality icon="bucket-1">
-	    			Etiam eget lectus odio. Suspendisse eu efficitur velit, vitae fermentum ex. Sed efficitur cursus odio, non tristique nulla mattis id.
+		    		I am committed to providing a great user experience. I make sure I am up to date with the latest web trends. Software should be beautiful!
     			</Quality>
 	    		<Quality icon="computer-1">
-	    			Donec aliquet id augue id feugiat. Morbi sodales tellus finibus venenatis dapibus. In iaculis auctor metus eget bibendum.
+		    		Developing for web and desktop has made me familiar with many technologies. Whatever the project, I will make sure the right technology is driving it.
     			</Quality>
 	    		<Quality icon="chat-1">
-	    			Ut ultrices urna enim, nec ultricies massa rhoncus sed. Etiam arcu augue, rutrum vitae efficitur eget, ultrices ullamcorper purus.
+		    		I will talk to you! I understand the importance of communication between client and developer.
     			</Quality>
 			</div>
     	</div>
