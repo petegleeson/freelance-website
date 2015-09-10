@@ -5,7 +5,7 @@
   "main": "./App.jsx",
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build",
-    "postinstall": "webpack --config ./webpack-production.config.js --progress --colors",
+    "postinstall": "webpack --config ./webpack.production.config.js --progress --colors",
     "start": "node server.js"
   },
   "author": "Peter Gleeson",
