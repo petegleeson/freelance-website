@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var app = express();
 
 var isDevelopment = (process.env.NODE_ENV !== 'production');
-var static_path = path.join(__dirname, 'public');
+var static_path = path.join(__dirname, 'build');
 
 app.use(express.static(static_path))
   .get('/', function (req, res) {
@@ -13,11 +13,11 @@ app.use(express.static(static_path))
     });
   }).listen(process.env.PORT || 8080, function (err) {
     if (err) { console.log(err) };
-    console.log('Listening at localhost:8080');
+    console.log('Production listening at localhost:8080');
   });
 
 if (isDevelopment) {
-  var config = require('./webpack.config');
+  var config = require('./config/webpack.dev.config.js');
   var WebpackDevServer = require('webpack-dev-server');
 
   new WebpackDevServer(webpack(config), {
@@ -25,6 +25,6 @@ if (isDevelopment) {
     hot: true
   }).listen(3000, 'localhost', function (err, result) {
     if (err) { console.log(err) }
-    console.log('Listening at localhost:3000');
+    console.log('Development listening at localhost:3000');
   });
 }

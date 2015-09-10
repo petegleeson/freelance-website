@@ -1,5 +1,5 @@
-require("./style/main.scss")
+require("../style/main.scss")
 var React = require('react')
-var Home = require('./src/Home')
+var Home = require('./Home')
 
 React.render(<Home />, document.body); 

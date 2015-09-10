@@ -1,29 +1,38 @@
-var path = require('path');
-var webpack = require('webpack');
+var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path')
+
+var nodeModulesPath = path.resolve(__dirname, '../node_modules')
+var moduleRootPath = path.resolve(__dirname, '../src')
+var mainPath = path.resolve(__dirname, '../src/app.jsx')
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'inline-source-map',
 
+  // the entry point for webpack
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
-    './App.jsx'
+    mainPath
   ],
 
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js',
-    publicPath: '/public/'
+    publicPath: '/'
   },
 
+  // hot loading support, and auto generation of index.html
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin()
   ],
 
+  // automatically add extensions to import statements
   resolve: {
+    root: moduleRootPath,
     extensions: ['', '.js', '.jsx']
   },
 
+  // use babel for es6
   module: {
     loaders: [
       {
@@ -31,7 +40,7 @@ module.exports = {
         loader: 'style!css!sass'
       },
       {
-      	test: /\.jsx$/,
+        test: /\.jsx$/,
         loader: 'jsx-loader?insertPragma=React.DOM&harmony'
       },
       {
@@ -41,10 +50,10 @@ module.exports = {
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
       },
-	    { 
+      { 
         test: /\.(ttf|eot|svg|woff)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
         loader: "file-loader" 
       }
     ]
-  },
-};
+  }
+}
