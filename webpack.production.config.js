@@ -2,28 +2,27 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'eval',
-
+  devtool: 'source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
     './App.jsx'
   ],
-
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     publicPath: '/public/'
   },
-
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compress: {
+        warnings: false
+      }
+    })
   ],
-
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-
   module: {
     loaders: [
       {
@@ -31,7 +30,7 @@ module.exports = {
         loader: 'style!css!sass'
       },
       {
-      	test: /\.jsx$/,
+        test: /\.jsx$/,
         loader: 'jsx-loader?insertPragma=React.DOM&harmony'
       },
       {
@@ -41,10 +40,10 @@ module.exports = {
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
       },
-	    { 
+      { 
         test: /\.(ttf|eot|svg|woff)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
         loader: "file-loader" 
       }
     ]
-  },
-};
+  }
+}
