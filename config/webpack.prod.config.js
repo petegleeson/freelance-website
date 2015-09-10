@@ -5,6 +5,7 @@ var path = require('path')
 var nodeModulesPath = path.resolve(__dirname, '../node_modules')
 var moduleRootPath = path.resolve(__dirname, '../src')
 var buildPath = path.resolve(__dirname, '../build')
+var htmlPath = path.resolve(__dirname, '../src/index.html')
 var mainPath = path.resolve(__dirname, '../src/app.jsx')
 
 module.exports = {
@@ -19,7 +20,7 @@ module.exports = {
 
   // hot loading support, and auto generation of index.html
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({template: htmlPath, inject: true}),
     new webpack.NoErrorsPlugin()
   ],
 

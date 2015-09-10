@@ -5,6 +5,7 @@ var path = require('path')
 var nodeModulesPath = path.resolve(__dirname, '../node_modules')
 var moduleRootPath = path.resolve(__dirname, '../src')
 var mainPath = path.resolve(__dirname, '../src/app.jsx')
+var htmlPath = path.resolve(__dirname, '../src/index.html')
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -23,7 +24,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({template: htmlPath, inject: true}),
   ],
 
   // automatically add extensions to import statements
