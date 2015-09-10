@@ -4,6 +4,7 @@ var path = require('path')
 
 var nodeModulesPath = path.resolve(__dirname, '../node_modules')
 var moduleRootPath = path.resolve(__dirname, '../src')
+var buildPath = path.resolve(__dirname, '../build')
 var mainPath = path.resolve(__dirname, '../src/app.jsx')
 var htmlPath = path.resolve(__dirname, '../src/index.html')
 
@@ -16,7 +17,9 @@ module.exports = {
   ],
 
   output: {
-    publicPath: '/'
+    publicPath: '/',
+    path: buildPath,
+    filename: 'bundle.js'
   },
 
   // hot loading support, and auto generation of index.html
