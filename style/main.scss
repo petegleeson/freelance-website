@@ -35,7 +35,7 @@ body {
 
 
 #bg { 
-  background: url(../images/desk_all_blur_opaque.png) no-repeat center center fixed; 
+  background: url(../images/desk_all_blur_opaque-high.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -124,6 +124,15 @@ body {
 	.col:not([class*='unresponsive']) {  margin: 1% 0 1% 0%; }
 	.span_1_of_4:not([class*='unresponsive']),
 	{ width: 50%; }
+	#bg {
+	  background: url(../images/desk_all_blur_opaque-low.png) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 100vh;
+	  min-height: 650px;
+	}
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
