@@ -41,7 +41,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
+  min-height: 650px;
 }
 
 #top-row {
@@ -49,7 +49,7 @@ body {
 }
 
 #header-content {
-	padding: 2em 0em 0em 2em;
+	padding: 1em 1em 0em 1em;
 	height: 25%;
 	min-height: 100px;
 }
@@ -119,6 +119,13 @@ body {
 	width: 23.8%;
 }
 
+/*  GO HALF WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 960px) {
+	.col:not([class*='unresponsive']) {  margin: 1% 0 1% 0%; }
+	.span_1_of_4:not([class*='unresponsive']),
+	{ width: 50%; }
+}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
 	.col:not([class*='unresponsive']) {  margin: 1% 0 1% 0%; }
@@ -128,3 +135,4 @@ body {
 	.span_4_of_4:not([class*='unresponsive']),
 	{ width: 100%; }
 }
+

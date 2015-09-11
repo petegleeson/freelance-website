@@ -8,7 +8,7 @@ var Introduction = React.createClass({
     return (
 		<div style={{height: "100%"}}>
 			<div style={{height: "80%"}}>
-		    	<div className="section group" style={{padding: "1em 2em"}}>
+		    	<div className="section group" style={{padding: "2em 1em 0em 1em"}}>
 		    		<div className="col span_1_of_4 unresponsive">
 						<FlatIcon icon="lightbulb-1" size="150%"></FlatIcon>
 					</div>
