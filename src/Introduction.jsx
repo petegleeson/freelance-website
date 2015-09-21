@@ -4,6 +4,9 @@ var React = require('react')
 var FlatIcon = require('./FlatIcon');
 
 var Introduction = React.createClass({
+  scrollDown: function(event) {
+    window.scrollTo(0, document.body.scrollHeight);
+  },
   render: function() {
     return (
 		<div style={{height: "100%"}}>
@@ -30,7 +33,7 @@ var Introduction = React.createClass({
 					</div>
 				</div>
 			</div>
-			<div style={{height: "20%"}}>
+			<div onClick={this.scrollDown} style={{height: "20%"}}>
     			<FlatIcon icon="down-2" size="200%"></FlatIcon>
 			</div>
 		</div>

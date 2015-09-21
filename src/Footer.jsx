@@ -10,7 +10,7 @@ var Footer = React.createClass({
 					<div>
 						<FlatIcon icon="mail-4" size="150%"></FlatIcon>
 					</div>
-					<p>petergleeson.dev@gmail.com</p>
+					<a href="mailto:petergleeson.dev@gmail.com" target="_top"><p>petergleeson.dev@gmail.com</p></a> 
 	    		</div>
 	    	</div>
     	</div>
